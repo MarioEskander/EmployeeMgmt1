@@ -30,6 +30,7 @@ namespace EmployeeMgmt1
         }
         private void ShowEmp()
         {
+
             try
             {
                 string Query = "Select * from EmployeeTb1";
