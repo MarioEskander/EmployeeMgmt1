@@ -138,6 +138,7 @@ namespace EmployeeMgmt1
 
             try
             {
+
                 if (Key == 0)
                 {
                     MessageBox.Show("Missing Data!!!");
