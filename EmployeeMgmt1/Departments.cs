@@ -84,6 +84,7 @@ namespace EmployeeMgmt1
                     ShowDepartments();
                     MessageBox.Show("Department Updated!!!");
                     DepNameTb.Text = "";
+
                 }
             }
             catch (Exception Ex)
