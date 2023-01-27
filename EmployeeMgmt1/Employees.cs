@@ -56,7 +56,14 @@ namespace EmployeeMgmt1
             DOBTb.Text = EmployeeList.SelectedRows[0].Cells[4].Value.ToString();
             JDateTb.Text = EmployeeList.SelectedRows[0].Cells[5].Value.ToString();
             DailySalTb.Text = EmployeeList.SelectedRows[0].Cells[6].Value.ToString();
-           
+            if (EmpNameTb.Text == "")
+            {
+                Key = 0;
+            }
+            else
+            {
+                Key = Convert.ToInt32(EmployeeList.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
 
         private void GetDepartment()
