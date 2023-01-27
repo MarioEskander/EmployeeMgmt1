@@ -89,7 +89,7 @@ namespace EmployeeMgmt1
                     string DOB = DOBTb.Value.ToString();
                     string JDate = JDateTb.Value.ToString();
                     int Salary =Convert.ToInt32(DailySalTb.Text);
-                    string Query = "insert into EmployeeTb1 values('{0}','{1}',{2},'{3}','{4}','{5}')";
+                    string Query = "insert into EmployeeTb1 values('{0}','{1}',{2},'{3}','{4}',{5})";
                     Query = string.Format(Query, Name,Gender,Dep,DOB,JDate,Salary);
                     Con.SetData(Query);
                     ShowEmp();
