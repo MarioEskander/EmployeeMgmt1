@@ -71,6 +71,7 @@ namespace EmployeeMgmt1
             DailySalTb.Text = EmployeeList.SelectedRows[0].Cells[6].Value.ToString();
             if (EmpNameTb.Text == "")
             {
+
                 Key = 0;
             }
             else
