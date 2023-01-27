@@ -20,6 +20,7 @@ using System.Windows.Forms;
 
 namespace EmployeeMgmt1
 {
+
     public partial class Departments : Form
     {
         Functions Con;
