@@ -83,6 +83,7 @@ namespace EmployeeMgmt1
 
             try
             {
+
                 string Query = "Select * from SalaryTb1";
                 SalaryList.DataSource = Con.GetData(Query);
             }
