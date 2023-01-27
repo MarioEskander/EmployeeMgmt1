@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// this is a new commit 
+// this is System commits 
 
 namespace EmployeeMgmt1
 {
@@ -20,8 +20,8 @@ namespace EmployeeMgmt1
             InitializeComponent();
             Con = new Functions();
             ShowDepartments();
-            // this is a commit 
         }
+        // this is a Department commit 
         private void ShowDepartments()
         {
             string Query = "Select * from DepartmentTb1";
@@ -72,9 +72,11 @@ namespace EmployeeMgmt1
                 if (DepNameTb.Text == "")
                 {
                     MessageBox.Show("MISSING DATA!!!");
+
                 }
                 else
                 {
+
                     string Dep = DepNameTb.Text;
                     string Query = "Update DepartmentTb1 set DepName = '{0}' where DepId = {1}";
                     Query = string.Format(Query, DepNameTb.Text, Key);
@@ -82,6 +84,7 @@ namespace EmployeeMgmt1
                     ShowDepartments();
                     MessageBox.Show("Department Updated!!!");
                     DepNameTb.Text = "";
+
                 }
             }
             catch (Exception Ex)
@@ -95,6 +98,7 @@ namespace EmployeeMgmt1
         {
             try
             {
+
                 if (DepNameTb.Text == "")
                 {
                     MessageBox.Show("Missing Data!!!");
@@ -127,6 +131,7 @@ namespace EmployeeMgmt1
 
         private void SalaryLb1_Click(object sender, EventArgs e)
         {
+            
             Salaries Obj = new Salaries();
             Obj.Show();
 
@@ -135,9 +140,10 @@ namespace EmployeeMgmt1
 
         private void label8_Click(object sender, EventArgs e)
         {
+
             Login Obj = new Login();
             Obj.Show();
-
+            
             this.Hide();
         }
     }

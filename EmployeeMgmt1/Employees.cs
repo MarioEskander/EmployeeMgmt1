@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// these are System commits
+
+// this is Employee commit
+
 namespace EmployeeMgmt1
 {
     public partial class Employees : Form
@@ -27,7 +31,7 @@ namespace EmployeeMgmt1
                 string Query = "Select * from EmployeeTb1";
                 EmployeeList.DataSource = Con.GetData(Query);
             }
-            catch (Exception)
+            catch (Exception )
             {
 
                 throw;
@@ -36,12 +40,12 @@ namespace EmployeeMgmt1
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            // this is i dont know what this for... commit 
         }
 
         private void Employees_Load(object sender, EventArgs e)
         {
-
+            // another random code commit
         }
         int Key = 0;
         private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
