@@ -78,6 +78,7 @@ namespace EmployeeMgmt1
                 UNameTb.Text = "";
                 PasswordTb.Text = "";
             }
+            // this is the end of the code of the new design
         }
     }
 }
