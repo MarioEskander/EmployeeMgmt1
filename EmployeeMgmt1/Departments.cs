@@ -77,7 +77,7 @@ namespace EmployeeMgmt1
                 {
                     string Dep = DepNameTb.Text;
                     string Query = "Update DepartmentTb1 set DepName = '{0}' where DepId = {1}";
-                    Query = string.Format(Query, DepNameTb.Text,Key);
+                    Query = string.Format(Query, DepNameTb.Text, Key);
                     Con.SetData(Query);
                     ShowDepartments();
                     MessageBox.Show("Department Updated!!!");
