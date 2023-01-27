@@ -43,6 +43,7 @@ namespace EmployeeMgmt1
         }
         // this is the end of it...
 
+        // this is a new code with new Design
         private void label2_Click(object sender, EventArgs e)
         {
 
