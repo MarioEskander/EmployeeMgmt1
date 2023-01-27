@@ -121,5 +121,6 @@ namespace EmployeeMgmt1
             this.Hide();
 
         }
+        // this is END LOGOUT_BUTTON CODE
     }
 }
