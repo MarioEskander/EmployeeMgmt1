@@ -27,6 +27,7 @@ namespace EmployeeMgmt1
         Functions Con;
         public Departments()
         {
+
             InitializeComponent();
             Con = new Functions();
             ShowDepartments();
