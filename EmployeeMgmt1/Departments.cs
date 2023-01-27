@@ -154,6 +154,7 @@ namespace EmployeeMgmt1
             {
 
                 MessageBox.Show(Ex.Message);
+
             }
         }
 
