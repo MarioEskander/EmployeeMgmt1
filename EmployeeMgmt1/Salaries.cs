@@ -74,6 +74,7 @@ namespace EmployeeMgmt1
         {
 
         }
+        // this is a ADDBTN_BUTTON CODE
         int d = 1;
         private void AddBtn_Click(object sender, EventArgs e)
         {
@@ -81,7 +82,7 @@ namespace EmployeeMgmt1
             {
                 if(EmpCb.SelectedIndex == -1 || DaysTb.Text == "" || PeriodTb.Text == "")
                 {
-                    MessageBox.Show("Missing Data!!!");
+                    MessageBox.Show("MISSING DATA!!!");
                 }
                 else
                 {
@@ -100,7 +101,6 @@ namespace EmployeeMgmt1
 
                 }
 
-
             }
             catch (Exception Ex)
             {
@@ -109,12 +109,13 @@ namespace EmployeeMgmt1
             }
 
         }
+        // this is END ADDBTN_BUTTON CODE
 
         private void EmpCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
             GetSalary();
         }
-
+        // this is a LOGOUT_BUTTON 
         private void LogoutLb1_Click(object sender, EventArgs e)
         {
             Login Obj = new Login();
@@ -122,5 +123,6 @@ namespace EmployeeMgmt1
             this.Hide();
 
         }
+        // this is END LOGOUT_BUTTON CODE
     }
 }

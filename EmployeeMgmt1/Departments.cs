@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// this is a new commit 
+
 namespace EmployeeMgmt1
 {
     public partial class Departments : Form
@@ -18,6 +20,7 @@ namespace EmployeeMgmt1
             InitializeComponent();
             Con = new Functions();
             ShowDepartments();
+            // this is a commit 
         }
         private void ShowDepartments()
         {
@@ -30,7 +33,7 @@ namespace EmployeeMgmt1
             {
                 if(DepNameTb.Text == "")
                 {
-                    MessageBox.Show("Missing Data!!!");
+                    MessageBox.Show("MISSING DATA!!!");
                 }else
                 {
                     string Dep = DepNameTb.Text;
@@ -38,7 +41,7 @@ namespace EmployeeMgmt1
                     Query = string.Format(Query,DepNameTb.Text);
                     Con.SetData(Query);
                     ShowDepartments();
-                    MessageBox.Show("Department Added!!!");
+                    MessageBox.Show("DEPARTMENT ADDED!!!");
                     DepNameTb.Text = "";
                 }
             }
