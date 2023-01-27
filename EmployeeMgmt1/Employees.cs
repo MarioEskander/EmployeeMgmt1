@@ -193,7 +193,7 @@ namespace EmployeeMgmt1
                     Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary,Key);
                     Con.SetData(Query);
                     ShowEmp();
-                    MessageBox.Show("Employee Added!!!");
+                    
                     EmpNameTb.Text = "";
                     DailySalTb.Text = "";
                     GenCb.SelectedIndex = -1;
