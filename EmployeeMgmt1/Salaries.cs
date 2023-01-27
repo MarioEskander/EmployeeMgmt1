@@ -42,7 +42,7 @@ namespace EmployeeMgmt1
 
             if (DaysTb.Text == "")
             {
-                AmountTb.Text = "Rs " + (d * DSal);
+                AmountTb.Text = "$" + (d * DSal);
 
             }
             else if (Convert.ToInt32(DaysTb.Text) > 31)
