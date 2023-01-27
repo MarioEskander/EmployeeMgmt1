@@ -41,6 +41,7 @@ namespace EmployeeMgmt1
                 PasswordTb.Text = "";
             }
         }
+        // this is the end of it...
 
         private void label2_Click(object sender, EventArgs e)
         {
