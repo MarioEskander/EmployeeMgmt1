@@ -14,42 +14,55 @@ using System.Windows.Forms;
 
 namespace EmployeeMgmt1
 {
+
     public partial class Employees : Form
     {
+
         Functions Con;
         public Employees()
         {
+
             InitializeComponent();
             Con = new Functions();
             ShowEmp();
             GetDepartment();
+
         }
         private void ShowEmp()
         {
+
             try
             {
+
                 string Query = "Select * from EmployeeTb1";
                 EmployeeList.DataSource = Con.GetData(Query);
+
             }
             catch (Exception )
             {
 
                 throw;
+
             }
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
+
             // this is i dont know what this for... commit 
+
         }
 
         private void Employees_Load(object sender, EventArgs e)
         {
+
             // another random code commit
+
         }
         int Key = 0;
         private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
             EmpNameTb.Text = EmployeeList.SelectedRows[0].Cells[1].Value.ToString();
             GenCb.Text = EmployeeList.SelectedRows[0].Cells[2].Value.ToString();
             DepCb.SelectedValue = EmployeeList.SelectedRows[0].Cells[3].Value.ToString();
@@ -58,31 +71,42 @@ namespace EmployeeMgmt1
             DailySalTb.Text = EmployeeList.SelectedRows[0].Cells[6].Value.ToString();
             if (EmpNameTb.Text == "")
             {
+
                 Key = 0;
+
             }
             else
             {
+
                 Key = Convert.ToInt32(EmployeeList.SelectedRows[0].Cells[0].Value.ToString());
+
             }
         }
 
         private void GetDepartment()
         {
+
             string Query = "select * from DepartmentTb1";
             DepCb.DisplayMember = Con.GetData(Query).Columns["DepName"].ToString();
             DepCb.ValueMember = Con.GetData(Query).Columns["DepId"].ToString();
             DepCb.DataSource = Con.GetData(Query);
+
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
+
             try
             {
+
                 if (EmpNameTb.Text == "" || GenCb.SelectedIndex == -1 || DepCb.SelectedIndex == -1 || DailySalTb.Text == "")
                 {
+
                     MessageBox.Show("Missing Data!!!");
+
                 }
                 else
                 {
+
                     string Name = EmpNameTb.Text;
                     string Gender = GenCb.SelectedItem.ToString();
                     int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
@@ -98,6 +122,7 @@ namespace EmployeeMgmt1
                     DailySalTb.Text = "";
                     GenCb.SelectedIndex = -1;
                     DepCb.SelectedIndex = -1;
+
                 }
             }
             catch (Exception Ex)
