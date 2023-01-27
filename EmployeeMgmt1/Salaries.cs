@@ -58,6 +58,7 @@ namespace EmployeeMgmt1
             //MessageBox.Show(DSal + "");
             if (DaysTb.Text == "")
             {
+
                 AmountTb.Text = "Rs" + (d * DSal);
 
             }
