@@ -96,9 +96,10 @@ namespace EmployeeMgmt1
                     ShowSalaries();
                     MessageBox.Show("Salary Paid!!!");
                     DaysTb.Text = "";
-                
+                    // this is a new commit 
+
                 }
-                
+
 
             }
             catch (Exception Ex)
