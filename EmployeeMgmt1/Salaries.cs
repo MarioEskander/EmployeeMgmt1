@@ -103,6 +103,7 @@ namespace EmployeeMgmt1
         int d = 1;
         private void AddBtn_Click(object sender, EventArgs e)
         {
+
             try
             {
                 if(EmpCb.SelectedIndex == -1 || DaysTb.Text == "" || PeriodTb.Text == "")
