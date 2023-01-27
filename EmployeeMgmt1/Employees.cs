@@ -196,7 +196,7 @@ namespace EmployeeMgmt1
                     MessageBox.Show("Employee Added!!!");
                     EmpNameTb.Text = "";
                     DailySalTb.Text = "";
-                    
+                    GenCb.SelectedIndex = -1;
                     DepCb.SelectedIndex = -1;
 
                 }
