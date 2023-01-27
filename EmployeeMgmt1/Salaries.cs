@@ -109,6 +109,7 @@ namespace EmployeeMgmt1
             }
 
         }
+        // this is END ADDBTN_BUTTON CODE
 
         private void EmpCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
