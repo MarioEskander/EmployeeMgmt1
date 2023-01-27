@@ -182,6 +182,7 @@ namespace EmployeeMgmt1
                 }
                 else
                 {
+
                     string Name = EmpNameTb.Text;
                     string Gender = GenCb.SelectedItem.ToString();
                     int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
