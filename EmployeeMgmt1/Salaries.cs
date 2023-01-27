@@ -41,6 +41,7 @@ namespace EmployeeMgmt1
             EmpCb.DisplayMember = Con.GetData(Query).Columns["EmpName"].ToString();
             EmpCb.ValueMember = Con.GetData(Query).Columns["EmpId"].ToString();
             EmpCb.DataSource = Con.GetData(Query);
+
         }
         int DSal = 0;
         string Period = "";
