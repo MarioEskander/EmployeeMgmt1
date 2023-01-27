@@ -70,6 +70,7 @@ namespace EmployeeMgmt1
             }
             else
             {
+
                 d = Convert.ToInt32(DaysTb.Text);
                 AmountTb.Text = "Rs" + (d * DSal);
             }
