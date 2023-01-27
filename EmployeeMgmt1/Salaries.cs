@@ -149,6 +149,7 @@ namespace EmployeeMgmt1
         // this is a LOGOUT_BUTTON 
         private void LogoutLb1_Click(object sender, EventArgs e)
         {
+
             Login Obj = new Login();
             Obj.Show();
             this.Hide();
