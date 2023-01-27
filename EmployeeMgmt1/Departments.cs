@@ -128,6 +128,7 @@ namespace EmployeeMgmt1
         {
             Salaries Obj = new Salaries();
             Obj.Show();
+
             this.Hide();
         }
 
