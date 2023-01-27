@@ -185,6 +185,7 @@ namespace EmployeeMgmt1
             Obj.Show();
             
             this.Hide();
+            
         }
     }
 }
