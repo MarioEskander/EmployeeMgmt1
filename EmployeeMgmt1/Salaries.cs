@@ -56,7 +56,6 @@ namespace EmployeeMgmt1
                 DSal = Convert.ToInt32(dr["EmpSal"].ToString());
             }
             //MessageBox.Show(DSal + "");
-
             if (DaysTb.Text == "")
             {
                 AmountTb.Text = "Rs" + (d * DSal);
