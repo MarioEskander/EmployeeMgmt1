@@ -21,7 +21,7 @@ namespace EmployeeMgmt1
             Con = new Functions();
             ShowDepartments();
         }
-        // this is a new commit 
+        // this is a Department commit 
         private void ShowDepartments()
         {
             string Query = "Select * from DepartmentTb1";
