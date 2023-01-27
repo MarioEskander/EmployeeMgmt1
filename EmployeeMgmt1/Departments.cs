@@ -31,6 +31,7 @@ namespace EmployeeMgmt1
             InitializeComponent();
             Con = new Functions();
             ShowDepartments();
+
         }
         // this is a Department commit 
         private void ShowDepartments()
