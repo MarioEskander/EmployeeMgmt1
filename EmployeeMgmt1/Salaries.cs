@@ -80,6 +80,7 @@ namespace EmployeeMgmt1
         // this is a commit...
         private void ShowSalaries()
         {
+
             try
             {
                 string Query = "Select * from SalaryTb1";
