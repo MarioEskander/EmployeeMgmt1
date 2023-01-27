@@ -175,6 +175,7 @@ namespace EmployeeMgmt1
             Obj.Show();
 
             this.Hide();
+
         }
 
         private void label8_Click(object sender, EventArgs e)
