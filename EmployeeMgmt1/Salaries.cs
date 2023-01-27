@@ -29,7 +29,7 @@ namespace EmployeeMgmt1
         }
         int DSal = 0;
         string Period = "";
-        // this is a commit
+        // this is a commit...
         private void GetSalary()
         {
             string Query = "select * from EmployeeTb1 where EmpId = {0} ";
