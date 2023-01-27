@@ -76,7 +76,7 @@ namespace EmployeeMgmt1
                 else
                 {
                     string Dep = DepNameTb.Text;
-                    string Query = "Update DepartmentTb1 set DepName = '{1}' where DepId = {1}";
+                    string Query = "Update DepartmentTb1 set DepName = '{0}' where DepId = {1}";
                     Query = string.Format(Query, DepNameTb.Text,Key);
                     Con.SetData(Query);
                     ShowDepartments();
