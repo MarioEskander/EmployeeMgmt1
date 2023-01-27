@@ -90,6 +90,7 @@ namespace EmployeeMgmt1
                     int Days = Convert.ToInt32(DaysTb.Text);
 
                     string Query = "insert into SalaryTb1 values({0},{1},'{2}',{3},'{4}')";
+                    // this is a new commit
                     Query = string.Format(Query, EmpCb.SelectedValue.ToString(), Days, Period, Amount, DateTime.Today.Date);
                     Con.SetData(Query);
                     ShowSalaries();
