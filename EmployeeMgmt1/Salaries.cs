@@ -26,6 +26,7 @@ namespace EmployeeMgmt1
 
         public Salaries()
         {
+
             InitializeComponent();
             Con = new Functions();
             ShowSalaries();
