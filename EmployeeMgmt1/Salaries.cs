@@ -36,6 +36,7 @@ namespace EmployeeMgmt1
         }
         private void GetEmployees()
         {
+
             string Query = "select * from EmployeeTb1";
             EmpCb.DisplayMember = Con.GetData(Query).Columns["EmpName"].ToString();
             EmpCb.ValueMember = Con.GetData(Query).Columns["EmpId"].ToString();
