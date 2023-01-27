@@ -23,6 +23,7 @@ namespace EmployeeMgmt1
     {
 
         Functions Con;
+
         public Salaries()
         {
             InitializeComponent();
