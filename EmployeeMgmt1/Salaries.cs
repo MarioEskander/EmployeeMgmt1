@@ -32,6 +32,7 @@ namespace EmployeeMgmt1
             Con = new Functions();
             ShowSalaries();
             GetEmployees();
+
         }
         private void GetEmployees()
         {
