@@ -36,7 +36,7 @@ namespace EmployeeMgmt1
             Query = string.Format(Query, EmpCb.SelectedValue.ToString());
             foreach(DataRow dr in Con.GetData(Query).Rows)
             {
-                DSal = Convert.ToInt16(dr["EmpSal"].ToString());
+                DSal = Convert.ToInt32(dr["EmpSal"].ToString());
             }
             //MessageBox.Show(DSal + "");
 
