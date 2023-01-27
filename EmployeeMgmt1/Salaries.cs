@@ -81,7 +81,7 @@ namespace EmployeeMgmt1
             {
                 if(EmpCb.SelectedIndex == -1 || DaysTb.Text == "" || PeriodTb.Text == "")
                 {
-                    MessageBox.Show("Missing Data!!!");
+                    MessageBox.Show("MISSING DATA!!!");
                 }
                 else
                 {
