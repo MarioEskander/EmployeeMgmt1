@@ -121,6 +121,7 @@ namespace EmployeeMgmt1
         {
             Employees Obj = new Employees();
             Obj.Show();
+            
             this.Hide();
         }
 
