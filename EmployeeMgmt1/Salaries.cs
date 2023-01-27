@@ -1,12 +1,10 @@
 ﻿using System;
-
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -31,6 +29,7 @@ namespace EmployeeMgmt1
         }
         int DSal = 0;
         string Period = "";
+        // this is a commit...
         private void GetSalary()
         {
             string Query = "select * from EmployeeTb1 where EmpId = {0} ";
@@ -43,7 +42,7 @@ namespace EmployeeMgmt1
 
             if (DaysTb.Text == "")
             {
-                AmountTb.Text = "Rs " + (d * DSal);
+                AmountTb.Text = "Rs" + (d * DSal);
 
             }
             else if (Convert.ToInt32(DaysTb.Text) > 31)
@@ -57,6 +56,7 @@ namespace EmployeeMgmt1
             }
 
         }
+        // this is a commit...
         private void ShowSalaries()
         {
             try

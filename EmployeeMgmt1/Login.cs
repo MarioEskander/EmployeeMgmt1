@@ -16,6 +16,7 @@ namespace EmployeeMgmt1
         {
             InitializeComponent();
         }
+        // this is a old code with old design...
         private void ResetLb1_Click(object sender, EventArgs e)
         {
             UNameTb.Text= "";
@@ -40,7 +41,9 @@ namespace EmployeeMgmt1
                 PasswordTb.Text = "";
             }
         }
+        // this is the end of it...
 
+        // this is a new code with new Design
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -75,6 +78,7 @@ namespace EmployeeMgmt1
                 UNameTb.Text = "";
                 PasswordTb.Text = "";
             }
+            // this is the end of the code of the new design
         }
     }
 }
