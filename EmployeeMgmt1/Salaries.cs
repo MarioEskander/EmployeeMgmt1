@@ -32,7 +32,7 @@ namespace EmployeeMgmt1
         // this is a commit...
         private void GetSalary()
         {
-            string Query = "select * from EmployeeTb1 where EmpId = {1} ";
+            string Query = "select * from EmployeeTb1 where EmpId = {0} ";
             Query = string.Format(Query, EmpCb.SelectedValue.ToString());
             foreach(DataRow dr in Con.GetData(Query).Rows)
             {
