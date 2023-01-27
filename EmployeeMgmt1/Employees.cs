@@ -212,9 +212,7 @@ namespace EmployeeMgmt1
         private void label9_Click(object sender, EventArgs e)
         {
 
-            Login Obj = new Login();
-            Obj.Show();
-            this.Hide();
+            
 
         }
     }
