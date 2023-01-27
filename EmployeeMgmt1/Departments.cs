@@ -1,19 +1,11 @@
 ﻿using System;
-
 using System.Collections.Generic;
-
 using System.ComponentModel;
-
 using System.Data;
-
 using System.Drawing;
-
 using System.Linq;
-
 using System.Text;
-
 using System.Threading.Tasks;
-
 using System.Windows.Forms;
 
 // this is System commits 
@@ -97,8 +89,10 @@ namespace EmployeeMgmt1
 
             try
             {
+
                 if (DepNameTb.Text == "")
                 {
+
                     MessageBox.Show("MISSING DATA!!!");
 
                 }
@@ -119,20 +113,25 @@ namespace EmployeeMgmt1
             {
 
                 MessageBox.Show(Ex.Message);
+
             }
         }
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
+
             try
             {
 
                 if (DepNameTb.Text == "")
                 {
+
                     MessageBox.Show("Missing Data!!!");
+
                 }
                 else
                 {
+
                     string Dep = DepNameTb.Text;
                     string Query = "Delete from DepartmentTb1 where DepId = {0}";
                     Query = string.Format(Query,Key);
@@ -140,21 +139,25 @@ namespace EmployeeMgmt1
                     ShowDepartments();
                     MessageBox.Show("Department Deleted!!!");
                     DepNameTb.Text = "";
+
                 }
             }
             catch (Exception Ex)
             {
 
                 MessageBox.Show(Ex.Message);
+
             }
         }
 
         private void EmpLbl_Click(object sender, EventArgs e)
         {
+
             Employees Obj = new Employees();
             Obj.Show();
             
             this.Hide();
+
         }
 
         private void SalaryLb1_Click(object sender, EventArgs e)
@@ -164,6 +167,7 @@ namespace EmployeeMgmt1
             Obj.Show();
 
             this.Hide();
+
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -173,6 +177,7 @@ namespace EmployeeMgmt1
             Obj.Show();
             
             this.Hide();
+            
         }
     }
 }
