@@ -37,6 +37,7 @@ namespace EmployeeMgmt1
         // this is a Department commit 
         private void ShowDepartments()
         {
+
             string Query = "Select * from DepartmentTb1";
             DepList.DataSource = Con.GetData(Query);
         }
