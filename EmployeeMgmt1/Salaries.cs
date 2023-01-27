@@ -144,15 +144,17 @@ namespace EmployeeMgmt1
         {
 
             GetSalary();
-
+            
         }
-        // this is a LOGOUT_BUTTON 
+
+        // this is a LOGOUT_BUTTON
         private void LogoutLb1_Click(object sender, EventArgs e)
         {
 
             Login Obj = new Login();
             Obj.Show();
             this.Hide();
+
 
         }
         // this is END LOGOUT_BUTTON CODE
