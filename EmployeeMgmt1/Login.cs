@@ -17,7 +17,11 @@ namespace EmployeeMgmt1
             InitializeComponent();
         }
         // this is a old code with old design...
-        
+        private void ResetLb1_Click(object sender, EventArgs e)
+        {
+            UNameTb.Text = "";
+            PasswordTb.Text = "";
+        }
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             if(UNameTb.Text == "" || PasswordTb.Text == "")
