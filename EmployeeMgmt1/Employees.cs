@@ -157,6 +157,7 @@ namespace EmployeeMgmt1
                     DailySalTb.Text = "";
                     GenCb.SelectedIndex = -1;
                     DepCb.SelectedIndex = -1;
+
                 }
             }
             catch (Exception Ex)
