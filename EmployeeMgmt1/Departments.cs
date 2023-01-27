@@ -80,6 +80,7 @@ namespace EmployeeMgmt1
             DepNameTb.Text = DepList.SelectedRows[0].Cells[1].Value.ToString();
             if(DepNameTb.Text == "")
             {
+
                 Key = 0;
             }
             else
