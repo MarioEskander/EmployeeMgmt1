@@ -127,6 +127,7 @@ namespace EmployeeMgmt1
 
         private void SalaryLb1_Click(object sender, EventArgs e)
         {
+            
             Salaries Obj = new Salaries();
             Obj.Show();
 
