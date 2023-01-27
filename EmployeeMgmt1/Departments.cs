@@ -63,6 +63,7 @@ namespace EmployeeMgmt1
                     ShowDepartments();
                     MessageBox.Show("DEPARTMENT ADDED!!!");
                     DepNameTb.Text = "";
+                    
                 }
             }
             catch (Exception Ex)
