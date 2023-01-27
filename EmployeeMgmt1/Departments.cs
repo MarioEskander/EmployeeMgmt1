@@ -137,6 +137,7 @@ namespace EmployeeMgmt1
         {
             Login Obj = new Login();
             Obj.Show();
+
             this.Hide();
         }
     }
