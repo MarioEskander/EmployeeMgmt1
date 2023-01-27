@@ -26,6 +26,7 @@ namespace EmployeeMgmt1
             Con = new Functions();
             ShowEmp();
             GetDepartment();
+
         }
         private void ShowEmp()
         {
