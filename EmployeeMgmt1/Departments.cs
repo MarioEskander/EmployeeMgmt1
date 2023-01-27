@@ -20,8 +20,8 @@ namespace EmployeeMgmt1
             InitializeComponent();
             Con = new Functions();
             ShowDepartments();
-            // this is a commit 
         }
+        // this is a new commit 
         private void ShowDepartments()
         {
             string Query = "Select * from DepartmentTb1";
