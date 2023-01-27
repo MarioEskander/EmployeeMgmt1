@@ -40,7 +40,7 @@ namespace EmployeeMgmt1
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            // this is i dont know what this for... commit 
         }
 
         private void Employees_Load(object sender, EventArgs e)
