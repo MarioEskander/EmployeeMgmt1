@@ -62,6 +62,7 @@ namespace EmployeeMgmt1
         int Key = 0;
         private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
             EmpNameTb.Text = EmployeeList.SelectedRows[0].Cells[1].Value.ToString();
             GenCb.Text = EmployeeList.SelectedRows[0].Cells[2].Value.ToString();
             DepCb.SelectedValue = EmployeeList.SelectedRows[0].Cells[3].Value.ToString();
