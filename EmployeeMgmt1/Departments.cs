@@ -31,7 +31,7 @@ namespace EmployeeMgmt1
         {
             try
             {
-                if(DepNameTb.Text == "")
+                if(DepNameTb.Text == " ")
                 {
                     MessageBox.Show("MISSING DATA!!!");
                 }else
@@ -71,13 +71,13 @@ namespace EmployeeMgmt1
             {
                 if (DepNameTb.Text == "")
                 {
-                    MessageBox.Show("Missing Data!!!");
+                    MessageBox.Show("MISSING DATA!!!");
                 }
                 else
                 {
                     string Dep = DepNameTb.Text;
                     string Query = "Update DepartmentTb1 set DepName = '{0}' where DepId = {1}";
-                    Query = string.Format(Query, DepNameTb.Text,Key);
+                    Query = string.Format(Query, DepNameTb.Text, Key);
                     Con.SetData(Query);
                     ShowDepartments();
                     MessageBox.Show("Department Updated!!!");
@@ -121,6 +121,7 @@ namespace EmployeeMgmt1
         {
             Employees Obj = new Employees();
             Obj.Show();
+            
             this.Hide();
         }
 
@@ -128,6 +129,7 @@ namespace EmployeeMgmt1
         {
             Salaries Obj = new Salaries();
             Obj.Show();
+
             this.Hide();
         }
 
@@ -135,6 +137,7 @@ namespace EmployeeMgmt1
         {
             Login Obj = new Login();
             Obj.Show();
+
             this.Hide();
         }
     }
