@@ -165,6 +165,7 @@ namespace EmployeeMgmt1
             Obj.Show();
             
             this.Hide();
+
         }
 
         private void SalaryLb1_Click(object sender, EventArgs e)
