@@ -28,6 +28,7 @@ namespace EmployeeMgmt1
         {
 
             InitializeComponent();
+
             Con = new Functions();
             ShowSalaries();
             GetEmployees();
