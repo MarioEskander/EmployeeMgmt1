@@ -129,16 +129,21 @@ namespace EmployeeMgmt1
             {
 
                 MessageBox.Show(Ex.Message);
+
             }
         }
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
+
             try
             {
+
                 if (Key == 0)
                 {
+
                     MessageBox.Show("Missing Data!!!");
+
                 }
                 else
                 {
@@ -152,25 +157,32 @@ namespace EmployeeMgmt1
                     DailySalTb.Text = "";
                     GenCb.SelectedIndex = -1;
                     DepCb.SelectedIndex = -1;
+
                 }
             }
             catch (Exception Ex)
             {
 
                 MessageBox.Show(Ex.Message);
+
             }
         }
 
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
+
             try
             {
+
                 if (EmpNameTb.Text == "" || GenCb.SelectedIndex == -1 || DepCb.SelectedIndex == -1 || DailySalTb.Text == "")
                 {
+
                     MessageBox.Show("Missing Data!!!");
+
                 }
                 else
                 {
+
                     string Name = EmpNameTb.Text;
                     string Gender = GenCb.SelectedItem.ToString();
                     int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
@@ -186,20 +198,24 @@ namespace EmployeeMgmt1
                     DailySalTb.Text = "";
                     GenCb.SelectedIndex = -1;
                     DepCb.SelectedIndex = -1;
+
                 }
             }
             catch (Exception Ex)
             {
 
                 MessageBox.Show(Ex.Message);
+
             }
         }
 
         private void label9_Click(object sender, EventArgs e)
         {
+
             Login Obj = new Login();
             Obj.Show();
             this.Hide();
+
         }
     }
 }
