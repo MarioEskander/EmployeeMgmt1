@@ -144,6 +144,7 @@ namespace EmployeeMgmt1
         {
 
             GetSalary();
+
         }
         // this is a LOGOUT_BUTTON 
         private void LogoutLb1_Click(object sender, EventArgs e)
